@@ -1,12 +1,5 @@
-// import React from "react";
-import React from "react";
-
-// import { Button } from "neetoui";
-
+import "./App.css";
 import Product from "./components/Product";
 
-const App = () => {
-  <Product />;
-};
-
+const App = () => <Product />;
 export default App;
