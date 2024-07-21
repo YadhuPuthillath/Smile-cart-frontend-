@@ -9,7 +9,7 @@ import { cartTotalOf } from "components/utils";
 import { isEmpty, keys } from "ramda";
 import useCartItemsStore from "stores/useCartItemsStore";
 
-import PriceCard from "./PriceCart";
+import PriceCard from "./PriceCard";
 import ProductCard from "./ProductCard";
 
 const Cart = () => {

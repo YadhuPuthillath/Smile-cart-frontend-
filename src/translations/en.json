@@ -1,0 +1,5 @@
+{
+  "buyNow": "Buy now",
+  "itemCount_one": "({{count}} item)",
+  "itemCount_other": "({{count}} items)"
+}
