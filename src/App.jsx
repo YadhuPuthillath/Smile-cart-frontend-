@@ -10,11 +10,11 @@ import ProductList from "./components/ProductList";
 
 const App = () => (
   <Switch>
+    <Route exact component={Checkout} path={routes.checkout} />
+    <Route exact component={Cart} to={routes.cart} />
     <Route exact component={Product} path={routes.products.show} />
     <Route exact component={ProductList} path={routes.products.index} />
     <Redirect exact from={routes.root} to={routes.products.index} />
-    <Route exact component={Cart} to={routes.cart} />
-    <Route exact component={Checkout} path={routes.checkout} />
     <Route component={PageNotFound} path="*" />
   </Switch>
 );
