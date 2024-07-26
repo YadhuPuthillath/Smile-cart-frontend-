@@ -3,12 +3,13 @@ import { useFetchCountries } from "hooks/reactQuery/useCheckoutApi";
 import i18n from "i18next";
 import { LeftArrow } from "neetoicons";
 import { Typography } from "neetoui";
+import { Form as NeetoUIForm } from "neetoui/formik";
 import { useTranslation } from "react-i18next";
 import { useHistory } from "react-router-dom";
 import withTitle from "utils/withTitle";
 
 import { CHECKOUT_FORM_INITIAL_VALUES } from "./constants";
-import { Form, NeetoUIForm } from "./Form";
+import Form from "./Form";
 
 const Checkout = () => {
   const { t } = useTranslation();
