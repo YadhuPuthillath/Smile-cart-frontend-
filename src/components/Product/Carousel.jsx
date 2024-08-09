@@ -1,4 +1,4 @@
-import { useState, useEffect, useRef, memo } from "react";
+import { useState, useEffect, useRef, memo, useCallback } from "react";
 
 import classNames from "classnames";
 import { useShowProduct } from "hooks/reactQuery/useProductsApi";
@@ -17,9 +17,9 @@ const Carousel = () => {
     useShowProduct(slug);
   const imageUrls = append(imageUrl, partialImageUrls);
 
-  const handleNext = () => {
+  const handleNext = useCallback(() => {
     setCurrentIndex(prevIndex => (prevIndex + 1) % imageUrls.length);
-  };
+  }, [imageUrls.length]);
 
   const handlePrevious = () => {
     setCurrentIndex(prevIndex => (prevIndex - 1) % imageUrls.length);
